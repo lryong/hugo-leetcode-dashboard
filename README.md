@@ -6,7 +6,7 @@
 
 ## Screenshots
 
-![leetcode-dashboard](/Users/luruiyong/Documents/leetcode_dashboard.png)
+![leetcode-dashboard](https://raw.githubusercontent.com/lryong/hugo-leetcode-dashboard/master/imgs/leetcode_dashboard.png)
 
 ## Installation
 
