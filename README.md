@@ -56,8 +56,8 @@
 
 ## License
 
-Released under the [MIT](https://github.com/olOwOlo/hugo-theme-even/blob/master/LICENSE.md) License.
+Released under the [MIT](https://github.com/lryong/hugo-leetcode-dashboard/blob/master/LICENSE) License.
 
-## d
+## Acknowledgements
 
 - [LeetCode_Helper](https://github.com/KivenCkl/LeetCode_Helper)
