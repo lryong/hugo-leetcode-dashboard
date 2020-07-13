@@ -22,11 +22,13 @@
 
    ```json
    {
-       "username": "leetcode-cn@leetcode", // LeetCode-cn 账号
-       "password": "leetcode", // 对应的密码
-       "outputDir": "../LeetCode" // dashboard 生成路径。 注意： 这里配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content
+       "username": "leetcode-cn@leetcode",  
+       "password": "leetcode", 
+       "outputDir": "../LeetCode" 
    }
    ```
+   username 是 LeetCode-cn 账号， password 是对应密码。 
+   outputDir 是dashboard 生成路径。 (注： 这里配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content)
 
 4. 可以根据需求修改 `templates.py` 定义的 dashboard 模板。
 
