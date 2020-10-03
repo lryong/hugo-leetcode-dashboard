@@ -23,3 +23,4 @@ if __name__ == "__main__":
             break
         else:
             print('请重新选择！')
+print("thanks for using")
