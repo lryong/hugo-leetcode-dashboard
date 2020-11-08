@@ -29,7 +29,7 @@
    ```
 
    username 是 LeetCode-cn 账号， password 是对应密码。
-   outputDir 为 dashboard 生成路径。 (注： 这里需要配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content)
+   outputDir 为 dashboard 生成路径。 (注： 这里配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content)
 
 4. 因为 Hugo 默认只支持 _markdown_ 文档, 在个人网站根目录下新建 `layouts/shortcodes/rawhtml.html`文件，以支持原生 HTML：
 
@@ -48,6 +48,24 @@
    ```shell
    echo "2" | python3 run.py && cp imgs/leetcode-logo.png /Users/XXX/my_blogs/static/images
    ```
+
+## Directory Structure
+
+通过 `hugo-leetcode-dashboard` 生成的文件目录如下：
+
+```shell
+.
+├── leetcode.md # 中文看板入口
+├── leetcode_en.md #英文看板入口
+├── problemset # 答题集
+│   ├── 3sum #题目
+│   │   ├── 3sum.go #题解原文件
+│   │   ├── 3sum.go.md # 题解
+│   │   ├── readme.md # 中文题目描述
+│   │   └── readme_en.md # 英文题目描述
+```
+
+把以上文件放到 hugo 文章根目录即可
 
 ## Features
 
