@@ -1,6 +1,6 @@
 ## hugo-leetcode-dashboard
 
-✨ 一个 LeetCode 答题看板的生成插件， 支持一键部署到 Hugo 站点。 **完整记录刷题心路历程 ** ✨
+✨ 一个 LeetCode 答题看板的生成插件， 支持一键部署到 Hugo 站点。 **完整记录刷题心路历程** ✨
 
 [在线预览 Demo](http://www.herbert.top:18080/leetcode/)
 
@@ -29,9 +29,9 @@
    ```
 
    username 是 LeetCode-cn 账号， password 是对应密码。
-   outputDir 为 dashboard 生成路径。 (注： 这里配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content)
+   outputDir 为 dashboard 生成路径。 (注： 这里需要配置为 hugo 站点的文档路径， 如：/Users/XXX/my_blogs/content)
 
-4. 因为 Hugo 默认只支持 _markdown_ 文档, 在个人站点下新建 `layouts/shortcodes/rawhtml.html`文件，以支持原生 HTML：
+4. 因为 Hugo 默认只支持 _markdown_ 文档, 在个人网站根目录下新建 `layouts/shortcodes/rawhtml.html`文件，以支持原生 HTML：
 
    ```css
    <!-- raw html -- > {
