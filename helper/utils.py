@@ -1,8 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-23
-@LastEditTime: 2019-05-05
-'''
 import asyncio
 import aiohttp
 import os

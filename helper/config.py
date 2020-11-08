@@ -1,8 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-22
-@LastEditTime: 2019-05-05
-'''
 import json
 import os
 
@@ -11,6 +6,7 @@ class Config:
     '''
     获取配置信息并储存至 `config.json`
     '''
+
     def __init__(self):
         self.data = self.__getConfig()
 

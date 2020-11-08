@@ -1,13 +1,10 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-23
-'''
 from .problems import Problems
 import asyncio
 
 
 class Main:
     '''主程序'''
+
     def __init__(self):
         self.problems = Problems()
 

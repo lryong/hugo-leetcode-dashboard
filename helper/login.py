@@ -1,8 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-22
-@LastEditTime: 2019-05-05
-'''
 import requests
 from .constants import LEETCODE, LOGIN, HEADERS
 
@@ -11,6 +6,7 @@ class Login:
     '''
     登录 LeetCode-cn, 获取 cookies 值
     '''
+
     def __init__(self, username, password):
         self.username = username
         self.password = password

@@ -1,8 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-24
-@LastEditTime: 2019-05-05
-'''
 import json
 import re
 import time
@@ -11,6 +6,7 @@ from .constants import LANGS, TAG_FORMAT
 
 class ProblemInfoNode:
     '''解析问题基本信息'''
+
     def __init__(self, json_data):
         self.difficulty = json_data['difficulty']['level']
         self.is_favor = self.__formFavor(json_data['is_favor'])
@@ -41,6 +37,7 @@ class ProblemInfoNode:
 
 class ProblemDescNode:
     '''解析问题描述信息'''
+
     def __init__(self, json_data):
         self.id = json_data['data']['question']['questionId']
         self.content_en = self.__formContentEN(
@@ -90,6 +87,7 @@ class ProblemDescNode:
 
 class SubmissionNode:
     '''解析提交的代码信息'''
+
     def __init__(self, dic):
         self.submission_id = dic['id']
         self.lang = dic['lang']
@@ -111,6 +109,7 @@ class SubmissionNode:
 
 class InfoNode:
     '''解析用户基本信息'''
+
     def __init__(self, json_data):
         self.user_name = json_data.get('user_name')
         self.ac_easy = json_data.get('ac_easy')

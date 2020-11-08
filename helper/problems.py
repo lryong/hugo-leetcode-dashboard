@@ -1,8 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-23
-@LastEditTime: 2019-05-23
-'''
 import os
 import sqlite3
 import requests
@@ -18,6 +13,7 @@ from .constants import PROBLEMS, HEADERS, GRAPHQL, CODE_FORMAT
 
 class Problems:
     '''核心逻辑'''
+
     def __init__(self):
         self.login = Login(config.username, config.password)
         self.__db_dir = os.path.abspath(os.path.join(__file__, "../..", "db"))

@@ -1,9 +1,3 @@
-'''
-@Author: KivenChen
-@Date: 2019-04-22
-@LastEditTime: 2019-05-23
-'''
-
 # LeetCode 相关链接
 LEETCODE = "https://leetcode-cn.com"
 GRAPHQL = LEETCODE + "/graphql"
