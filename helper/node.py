@@ -1,7 +1,12 @@
+'''
+@Author: KivenChen
+@Date: 2019-04-24
+@LastEditTime: 2019-05-05
+'''
 import json
 import re
 import time
-from .constants import LANGS, ARTICLE_FORMAT, TAG_FORMAT
+from .constants import LANGS, TAG_FORMAT
 
 
 class ProblemInfoNode:
@@ -30,10 +35,6 @@ class ProblemInfoNode:
     def __formPaid(self, paid_only):
         return '🔒' if paid_only else ''
 
-    def __formArticle(self, article_live):
-        slug = ARTICLE_FORMAT.format(self.title_slug)
-        return '[📝]({})'.format(slug) if article_live else ''
-
     def __formId(self, id):
         return '{:0>4d}'.format(id)
 
@@ -59,10 +60,10 @@ class ProblemDescNode:
         if question_list:
             for q in question_list:
                 data = json.loads(q)
-                similar_questions_cn.append('- [{}](../../{}/readme)'.format(
+                similar_questions_cn.append('- [{}](../{}/README.md)'.format(
                     data['translatedTitle'], data['titleSlug']))
                 similar_questions_en.append(
-                    '- [{}](../../{}/readme_en)'.format(
+                    '- [{}](../{}/README_EN.md)'.format(
                         data['title'], data['titleSlug']))
         return '\n'.join(similar_questions_cn), '\n'.join(similar_questions_en)
 
@@ -89,15 +90,13 @@ class ProblemDescNode:
 
 class SubmissionNode:
     '''解析提交的代码信息'''
-    def __init__(self, json_data):
-        self.submission_id = json_data['id']
-        self.code = self.__formCode(json_data['code'])
-        self.lang = json_data['lang']
-        self.memory = json_data['memory']
-        self.runtime = json_data['runtime']
-        self.title_cn = json_data['title']
-        self.status_display = json_data['status_display']
-        self.timestamp = self.__formTime(json_data['timestamp'])
+    def __init__(self, dic):
+        self.submission_id = dic['id']
+        self.lang = dic['lang']
+        self.memory = dic['memory']
+        self.runtime = dic['runtime']
+        self.timestamp = self.__formTime(int(dic['timestamp']))
+        self.title_slug = dic['title_slug']
 
     @property
     def language(self):

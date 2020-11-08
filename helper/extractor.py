@@ -9,7 +9,6 @@ class Extractor:
     '''
     高速并发导出数据类
     '''
-
     def __init__(self, output_dir, author):
         self.output_dir = output_dir
         self.author = author
