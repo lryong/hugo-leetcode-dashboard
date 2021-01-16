@@ -44,11 +44,11 @@ class Extractor:
                             title=title,
                             paid_only=data['paid_only'],
                             is_favor=data['is_favor'],
-                            solutions='<br>'.join(solutions),
+                            solutions='、'.join(solutions),
                             ac_rate=data['ac_rate'],
                             difficulty=DIFFICULTY_CN[data['difficulty']],
                             tags=data['tags_cn'].replace('- ', '').replace(
-                                '\n', '<br>')))
+                                '\n', '、')))
                     solutions = []
         print(f'{os.path.abspath(readme_cn_path)} done!')
         readme_en_path = os.path.join(self.output_dir, 'leetcode_en.md')
@@ -77,11 +77,11 @@ class Extractor:
                             title=title,
                             paid_only=data['paid_only'],
                             is_favor=data['is_favor'],
-                            solutions='<br>'.join(solutions),
+                            solutions=', '.join(solutions),
                             ac_rate=data['ac_rate'],
                             difficulty=DIFFICULTY_EN[data['difficulty']],
                             tags=data['tags_en'].replace('- ', '').replace(
-                                '\n', '<br>')))
+                                '\n', ', ')))
                     solutions = []
         print(f'{os.path.abspath(readme_en_path)} done!')
 
