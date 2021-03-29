@@ -2,7 +2,7 @@
 
 ✨ 一个 LeetCode 答题看板的生成插件， 支持一键部署到 Hugo 站点。 **完整记录刷题心路历程** ✨
 
-[在线预览 Demo](http://www.herbert.top:18080/leetcode/)
+[在线预览 Demo](https://blog.herbert.top/leetcode/)
 
 ## Screenshots
 
