@@ -34,11 +34,8 @@
 4. 因为 Hugo 默认只支持 _markdown_ 文档, 在个人网站根目录下新建 `layouts/shortcodes/rawhtml.html`文件，以支持原生 HTML：
 
    ```css
-   <!-- raw html -- > {
-      {
-       .Inner;
-     }
-   }
+   <!-- raw html -->
+   {{.Inner}}
    ```
 
    (_具体参考[这里](https://anaulin.org/blog/hugo-raw-html-shortcode/)_)
