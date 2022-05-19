@@ -34,6 +34,31 @@ LANGS = {
         'ext': 'cpp',
         'style': '//'
     },
+    'php': {
+        'lang': 'PHP',
+        'ext': 'php',
+        'style': '//'
+    },
+    'typescript': {
+        'lang': 'TypeScript',
+        'ext': 'ts',
+        'style': '//'
+    },
+    'racket': {
+        'lang': 'Racket',
+        'ext': 'rkt',
+        'style': ';'
+    },
+    'erlang': {
+        'lang': 'Erlang',
+        'ext': 'erl',
+        'style': '%'
+    },
+    'elixir': {
+        'lang': 'Elixir',
+        'ext': 'exs',
+        'style': '#'
+    },
     'csharp': {
         'lang': 'C#',
         'ext': 'cs',
